@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<Authors>Michael Tanczos</Authors>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Description>jQuery Datatables server-side virtualization for the RoverCore template</Description>
+	<Copyright>2022</Copyright>
+	<Product>RoverCore.Datatables</Product>
+	<PackageProjectUrl>https://github.com/RoverCore/BreadCrumbs</PackageProjectUrl>
+	<RepositoryType>git</RepositoryType>
+	<PackageIcon>logo.png</PackageIcon>
+	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<Version>1.0.3</Version>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.1" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\logo.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+		<None Include="LICENSE.txt" Pack="true" PackagePath="LICENSE.txt" />
+	</ItemGroup>
+
+</Project>
